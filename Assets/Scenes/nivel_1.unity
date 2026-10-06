@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 105609037}
   - component: {fileID: 105609036}
   - component: {fileID: 105609040}
+  - component: {fileID: 105609041}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -176,9 +177,9 @@ BoxCollider2D:
   m_Offset: {x: -0.026524782, y: -0.053048134}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.3935952, y: 0.48314178}
     oldSize: {x: 4.25, y: 4.625}
-    newSize: {x: 9.375, y: 6}
+    newSize: {x: 4.375, y: 4}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -266,7 +267,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 9.375, y: 6}
+  m_Size: {x: 4.375, y: 4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -281,7 +282,7 @@ Transform:
   m_GameObject: {fileID: 105609035}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.59, z: 0}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -297,7 +298,7 @@ Animator:
   m_GameObject: {fileID: 105609035}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 91b63d11a6eb167468dfd59251fbcdd4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 223fb38136bbae548847bfe336503a9a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -309,6 +310,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &105609041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105609035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf5570d2a22223f4195f0b1419a43d73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::playerController
+  speed: 5
+  jumpForce: 7
 --- !u!1 &1218177237
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,7 +376,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.51722074}
+  m_Offset: {x: 0, y: -0.14673209}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -371,7 +386,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 14, y: 7.39413}
+  m_Size: {x: 14, y: 8.135107}
   m_EdgeRadius: 0
 --- !u!212 &1218177239
 SpriteRenderer:
@@ -590,5 +605,5 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1932213932}
-  - {fileID: 105609039}
   - {fileID: 1218177240}
+  - {fileID: 105609039}
